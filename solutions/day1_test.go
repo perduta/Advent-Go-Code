@@ -1,4 +1,4 @@
-package main
+package solutions
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 func TestDay1Part1(t *testing.T) {
 	// part 1 answer 1462
-	inputs := []int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263}
+	inputs := []string{"199", "200", "208", "210", "200", "207", "240", "269", "260", "263"}
 	expected := 7
 	fmt.Println(">>> TestDay1Part1")
 	result := Day1Part1(inputs)
@@ -18,7 +18,7 @@ func TestDay1Part1(t *testing.T) {
 
 func TestDay1Part2(t *testing.T) {
 	// part 1 answer 1462
-	inputs := []int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263}
+	inputs := []string{"199", "200", "208", "210", "200", "207", "240", "269", "260", "263"}
 	expected := 5
 	fmt.Println(">>> TestDay1Part2")
 	result := Day1Part2(inputs)
