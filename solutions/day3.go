@@ -1,7 +1,6 @@
 package solutions
 
 import (
-	"log"
 	"math"
 )
 
@@ -27,8 +26,6 @@ func Day3Part1(inputs []string) int {
 		}
 	}
 
-	log.Println(rowZerosCount)
-
 	gammaRateBits := make([]int, rowLength)
 	epsilonRateBits := make([]int, rowLength)
 	for i := 0; i < rowLength; i++ {
@@ -44,9 +41,6 @@ func Day3Part1(inputs []string) int {
 
 	gammaRate := Bin2Dec(gammaRateBits)
 	epsilonRate := Bin2Dec(epsilonRateBits)
-
-	log.Println(gammaRateBits, epsilonRateBits)
-	log.Println(gammaRate, epsilonRate)
 
 	return gammaRate * epsilonRate
 }
