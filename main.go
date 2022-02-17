@@ -13,7 +13,7 @@ func main() {
 	SOLUTION_FNS := map[int][]func([]string) int {
 		1: {solutions.Day1Part1, solutions.Day1Part2},
 		2: {solutions.Day2Part1, solutions.Day2Part2},
-		3: {solutions.Day3Part1},
+		3: {solutions.Day3Part1, solutions.Day3Part2},
 	}
 
 	files, err := ioutil.ReadDir("inputs/")

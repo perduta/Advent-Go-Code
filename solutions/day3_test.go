@@ -42,8 +42,18 @@ func TestBin2Dec(t *testing.T) {
 func TestDay3Part1(t *testing.T) {
 	inputs := getInputs()
 	expected := 198
-	fmt.Println(">>> TestDay2Part1")
+	fmt.Println(">>> TestDay3Part1")
 	result := Day3Part1(inputs)
+	if result != expected {
+		t.Errorf("Expected %d, got %d", expected, result)
+	}
+}
+
+func TestDay3Part2(t *testing.T) {
+	inputs := getInputs()
+	expected := 230
+	fmt.Println(">>> TestDay3Part2")
+	result := Day3Part2(inputs)
 	if result != expected {
 		t.Errorf("Expected %d, got %d", expected, result)
 	}
