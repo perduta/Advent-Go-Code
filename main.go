@@ -16,6 +16,7 @@ func main() {
 		3: {solutions.Day3Part1, solutions.Day3Part2},
 		4: {solutions.Day4Part1, solutions.Day4Part2},
 		5: {solutions.Day5Part1, solutions.Day5Part2},
+		6: {solutions.Day6Part1, solutions.Day6Part2},
 	}
 
 	files, err := ioutil.ReadDir("inputs/")
