@@ -1,20 +1,21 @@
 package main
 
 import (
+	"aoc2021/solutions"
 	"bufio"
 	"io/ioutil"
 	"log"
 	"os"
 	"strconv"
-	"aoc2021/solutions"
 )
 
 func main() {
-	SOLUTION_FNS := map[int][]func([]string) int {
+	SOLUTION_FNS := map[int][]func([]string) int{
 		1: {solutions.Day1Part1, solutions.Day1Part2},
 		2: {solutions.Day2Part1, solutions.Day2Part2},
 		3: {solutions.Day3Part1, solutions.Day3Part2},
 		4: {solutions.Day4Part1, solutions.Day4Part2},
+		5: {solutions.Day5Part1, solutions.Day5Part2},
 	}
 
 	files, err := ioutil.ReadDir("inputs/")
@@ -27,7 +28,7 @@ func main() {
 	for _, fileInfo := range files {
 		n, err := strconv.Atoi(fileInfo.Name())
 		if err != nil {
-			log.Fatal(err);
+			log.Fatal(err)
 		}
 		file, err := os.Open("inputs/" + fileInfo.Name())
 		if err != nil {
